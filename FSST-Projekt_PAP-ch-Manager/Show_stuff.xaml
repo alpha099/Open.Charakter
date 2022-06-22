@@ -1,0 +1,16 @@
+﻿<Window x:Class="FSST_Projekt_PAP_ch_Manager.Show_stuff"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FSST_Projekt_PAP_ch_Manager"
+        mc:Ignorable="d"
+        Title="Show_stuff" Height="450" Width="500">
+    <Grid>
+        <Label x:Name="LBL_STUFF" Content="Inventar" HorizontalAlignment="Left" Height="57" Margin="10,10,0,0" VerticalAlignment="Top" Width="188" FontSize="24"/>
+        <ScrollViewer x:Name="SCRVW_STUFF" HorizontalAlignment="Left" Height="357" Margin="10,67,0,0" VerticalAlignment="Top" Width="285"/>
+        <Button x:Name="BTN_CLOSE" Content="Schließen" HorizontalAlignment="Left" Height="62" Margin="320,36,0,0" VerticalAlignment="Top" Width="144" Click="BTN_CLOSE_Click"/>
+        <Button x:Name="BTN_Reload" Content="neu Laden" HorizontalAlignment="Left" Height="62" Margin="320,103,0,0" VerticalAlignment="Top" Width="144" Click="BTN_Reload_Click"/>
+
+    </Grid>
+</Window>

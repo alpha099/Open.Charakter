@@ -1,0 +1,22 @@
+﻿<Window x:Class="FSST_Projekt_PAP_ch_Manager.New_Item"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FSST_Projekt_PAP_ch_Manager"
+        mc:Ignorable="d"
+        Title="New Item" Height="250" Width="400">
+    <Grid>
+        <Button x:Name="BTN_Übernehmen" Content="Übernehmen" HorizontalAlignment="Left" Height="41" Margin="5,183,0,0" VerticalAlignment="Top" Width="99" Click="BTN_Übernehmen_Click"/>
+        <Label Content="Name" HorizontalAlignment="Left" Height="30" Margin="10,12,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Spezifikation" HorizontalAlignment="Left" Height="30" Margin="10,100,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Preis" HorizontalAlignment="Left" Height="30" Margin="200,105,0,0" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="TB_PREIS" HorizontalAlignment="Left" Height="32" Margin="200,135,0,0" TextWrapping="Wrap" Text="PREIS" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="TB_Spez" HorizontalAlignment="Left" Height="32" Margin="10,135,0,0" TextWrapping="Wrap" Text="SPEZIFIKATION" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="TB_NAME" HorizontalAlignment="Left" Height="32" Margin="10,47,0,0" TextWrapping="Wrap" Text="NAME" VerticalAlignment="Top" Width="94" TextChanged="TB_NAME_TextChanged"/>
+        <Button x:Name="BTN_Verwerfen" Content="Verwerfen" HorizontalAlignment="Left" Height="41" Margin="109,183,0,0" VerticalAlignment="Top" Width="116" Click="BTN_Verwerfen_Click"/>
+        <Label Content="Gewicht" HorizontalAlignment="Left" Height="30" Margin="200,17,0,0" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="TB_GEW" HorizontalAlignment="Left" Height="32" Margin="200,47,0,0" TextWrapping="Wrap" Text="GEWICHT" VerticalAlignment="Top" Width="99"/>
+
+    </Grid>
+</Window>

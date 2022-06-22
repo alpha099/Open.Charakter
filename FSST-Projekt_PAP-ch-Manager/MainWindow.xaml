@@ -1,0 +1,123 @@
+﻿<Window x:Class="FSST_Projekt_PAP_ch_Manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FSST_Projekt_PAP_ch_Manager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="520" Width="960" GotFocus="Window_GotFocus">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="55" Margin="500,10,0,0" VerticalAlignment="Top" Width="286" Source="/Bild_Deko.png"/>
+        <Image HorizontalAlignment="Left" Height="55" Margin="10,10,0,0" VerticalAlignment="Top" Width="286" Source="/Bild_Deko.png"/>
+        <Rectangle HorizontalAlignment="Left" Height="484" Margin="791,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="159"/>
+        <Label Content="Funktionen" HorizontalAlignment="Left" Height="25" Margin="803,24,0,0" VerticalAlignment="Top" Width="136"/>
+        <Label Content="Figur:" HorizontalAlignment="Left" Height="25" Margin="301,10,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label Content="Spieler:" HorizontalAlignment="Left" Height="25" Margin="301,40,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label x:Name="LBL_charname" Content="CharakterName" HorizontalAlignment="Left" Height="25" Margin="374,10,0,0" VerticalAlignment="Top" Width="121"/>
+        <Label x:Name="LBL_Player" Content="PlayerName" HorizontalAlignment="Left" Height="25" Margin="374,40,0,0" VerticalAlignment="Top" Width="121"/>
+        <Label Content="Typ" HorizontalAlignment="Left" Height="25" Margin="10,70,0,0" VerticalAlignment="Top" Width="31"/>
+        <Label x:Name="LBL_beruf" Content="CharakterBeruf" HorizontalAlignment="Left" Height="25" Margin="54,70,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Grad" HorizontalAlignment="Left" Height="25" Margin="153,70,0,0" VerticalAlignment="Top" Width="37"/>
+        <Label x:Name="LBL_Grad" Content="CharakterGrad" HorizontalAlignment="Left" Height="25" Margin="195,70,0,0" VerticalAlignment="Top" Width="101"/>
+        <Label Content="Spezialisierung" HorizontalAlignment="Left" Height="25" Margin="10,100,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label x:Name="LBL_SPEZIAL" Content="CharakterSpezialisierung" HorizontalAlignment="Left" Height="25" Margin="109,100,0,0" VerticalAlignment="Top" Width="170"/>
+        <Rectangle HorizontalAlignment="Left" Height="296" Margin="284,70,0,0" Stroke="Black" VerticalAlignment="Top" Width="196"/>
+        <Label Content="Geburtsdatum" HorizontalAlignment="Left" Height="30" Margin="296,82,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="LBL_BIRTHDAY" Content="BIRTHDAY" HorizontalAlignment="Left" Height="30" Margin="389,82,0,0" VerticalAlignment="Top" Width="82"/>
+        <Label Content="Alter" HorizontalAlignment="Left" Height="25" Margin="296,117,0,0" VerticalAlignment="Top" Width="39"/>
+        <Label x:Name="LBL_AGE" Content="AGE" HorizontalAlignment="Left" Height="25" Margin="338,118,0,0" VerticalAlignment="Top" Width="38"/>
+        <Label x:Name="LBL_HAND" Content="HAND" HorizontalAlignment="Left" Height="26" Margin="376,118,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label Content="händig" HorizontalAlignment="Left" Height="26" Margin="425,118,0,0" VerticalAlignment="Top" Width="46"/>
+        <Label Content="Größe" HorizontalAlignment="Left" Height="25" Margin="296,147,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label x:Name="LBL_GROESSE" Content="CharakterGroesse" HorizontalAlignment="Left" Height="25" Margin="354,147,0,0" VerticalAlignment="Top" Width="117"/>
+        <Label Content="Gestalt" HorizontalAlignment="Left" Height="25" Margin="296,177,0,0" VerticalAlignment="Top" Width="49"/>
+        <Label x:Name="LBL_Gestalt" Content="GESTALT" HorizontalAlignment="Left" Height="25" Margin="357,177,0,0" VerticalAlignment="Top" Width="114"/>
+        <Label Content="Gewicht" HorizontalAlignment="Left" Height="25" Margin="296,202,0,0" VerticalAlignment="Top" Width="53"/>
+        <Label x:Name="LBL_Gewicht" Content="GEWICHT" HorizontalAlignment="Left" Height="25" Margin="357,202,0,0" VerticalAlignment="Top" Width="114"/>
+        <Label Content="Stand" HorizontalAlignment="Left" Height="25" Margin="296,227,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label x:Name="LBL_stand" Content="STAND" HorizontalAlignment="Left" Height="25" Margin="357,227,0,0" VerticalAlignment="Top" Width="114"/>
+        <Label Content="Heimat" HorizontalAlignment="Left" Height="25" Margin="296,254,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label x:Name="LBL_heimat" Content="HEIMAT" HorizontalAlignment="Left" Height="25" Margin="357,254,0,0" VerticalAlignment="Top" Width="114"/>
+        <Label Content="Glaube" HorizontalAlignment="Left" Height="25" Margin="296,279,0,0" VerticalAlignment="Top" Width="56"/>
+        <Label x:Name="LBL_glaube" Content="GLAUBE" HorizontalAlignment="Left" Height="25" Margin="357,279,0,0" VerticalAlignment="Top" Width="114"/>
+        <Label Content="Merkmale" HorizontalAlignment="Left" Height="25" Margin="296,304,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label x:Name="LBL_merkmale" Content="MERKMALE" HorizontalAlignment="Left" Height="25" Margin="301,329,0,0" VerticalAlignment="Top" Width="158"/>
+        <Rectangle HorizontalAlignment="Left" Height="25" Margin="10,131,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Label Content="St" HorizontalAlignment="Left" Height="25" Margin="10,131,0,0" VerticalAlignment="Top" Width="25"/>
+        <Label x:Name="LBL_ST" Content="0" HorizontalAlignment="Left" Height="25" Margin="35,131,0,0" VerticalAlignment="Top" Width="30"/>
+        <Rectangle HorizontalAlignment="Left" Height="25" Margin="69,131,0,0" Stroke="Black" VerticalAlignment="Top" Width="54"/>
+        <Label Content="Gs" HorizontalAlignment="Left" Height="25" Margin="69,131,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label x:Name="LBL_GS" Content="0" HorizontalAlignment="Left" Height="25" Margin="93,131,0,0" VerticalAlignment="Top" Width="30"/>
+        <Rectangle HorizontalAlignment="Left" Height="25" Margin="127,131,0,0" Stroke="Black" VerticalAlignment="Top" Width="56"/>
+        <Label Content="Gw" HorizontalAlignment="Left" Height="25" Margin="127,131,0,0" VerticalAlignment="Top" Width="26"/>
+        <Label x:Name="LBL_GW" Content="0" HorizontalAlignment="Left" Height="25" Margin="153,131,0,0" VerticalAlignment="Top" Width="30"/>
+        <Rectangle HorizontalAlignment="Left" Height="25" Margin="188,131,0,0" Stroke="Black" VerticalAlignment="Top" Width="56"/>
+        <Label Content="Ko" HorizontalAlignment="Left" Height="25" Margin="188,131,0,0" VerticalAlignment="Top" Width="26"/>
+        <Label x:Name="LBL_KO" Content="0" HorizontalAlignment="Left" Height="25" Margin="214,131,0,0" VerticalAlignment="Top" Width="30"/>
+        <Rectangle HorizontalAlignment="Left" Height="25" Margin="10,160,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Label Content="In" HorizontalAlignment="Left" Height="25" Margin="10,160,0,0" VerticalAlignment="Top" Width="25"/>
+        <Label x:Name="LBL_IN" Content="0" HorizontalAlignment="Left" Height="25" Margin="35,160,0,0" VerticalAlignment="Top" Width="30"/>
+        <Rectangle HorizontalAlignment="Left" Height="25" Margin="69,160,0,0" Stroke="Black" VerticalAlignment="Top" Width="54"/>
+        <Label Content="Zt" HorizontalAlignment="Left" Height="25" Margin="69,160,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label x:Name="LBL_ZT" Content="0" HorizontalAlignment="Left" Height="25" Margin="93,160,0,0" VerticalAlignment="Top" Width="30"/>
+        <Rectangle HorizontalAlignment="Left" Height="25" Margin="127,160,0,0" Stroke="Black" VerticalAlignment="Top" Width="56"/>
+        <Label Content="Au" HorizontalAlignment="Left" Height="25" Margin="127,160,0,0" VerticalAlignment="Top" Width="26"/>
+        <Label x:Name="LBL_AU" Content="0" HorizontalAlignment="Left" Height="25" Margin="153,160,0,0" VerticalAlignment="Top" Width="30"/>
+        <Rectangle HorizontalAlignment="Left" Height="25" Margin="188,160,0,0" Stroke="Black" VerticalAlignment="Top" Width="56"/>
+        <Label Content="pA" HorizontalAlignment="Left" Height="25" Margin="188,160,0,0" VerticalAlignment="Top" Width="26"/>
+        <Label x:Name="LBL_PA" Content="0" HorizontalAlignment="Left" Height="25" Margin="214,160,0,0" VerticalAlignment="Top" Width="30"/>
+        <Rectangle HorizontalAlignment="Left" Height="25" Margin="10,189,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Label Content="Wk" HorizontalAlignment="Left" Height="25" Margin="10,189,0,0" VerticalAlignment="Top" Width="25"/>
+        <Label x:Name="LBL_WK" Content="0" HorizontalAlignment="Left" Height="25" Margin="35,189,0,0" VerticalAlignment="Top" Width="30"/>
+        <Rectangle HorizontalAlignment="Left" Height="25" Margin="69,189,0,0" Stroke="Black" VerticalAlignment="Top" Width="54"/>
+        <Label Content="B" HorizontalAlignment="Left" Height="25" Margin="69,189,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label x:Name="LBL_BW" Content="0" HorizontalAlignment="Left" Height="25" Margin="93,189,0,0" VerticalAlignment="Top" Width="30"/>
+        <Label Content="Raufen:" HorizontalAlignment="Left" Height="24" Margin="128,190,0,0" VerticalAlignment="Top" Width="55"/>
+        <Label x:Name="LBL_RAUFEN" Content="+0" HorizontalAlignment="Left" Height="28" Margin="188,190,0,0" VerticalAlignment="Top" Width="58"/>
+        <Label Content="persöhmlicher Bonus" HorizontalAlignment="Left" Height="25" Margin="10,227,0,0" VerticalAlignment="Top" Width="236" FontSize="8"/>
+        <Label Content="Ausdauer" HorizontalAlignment="Left" Height="25" Margin="10,254,0,0" VerticalAlignment="Top" Width="65"/>
+        <Label x:Name="LBL_AUSB" Content="0" HorizontalAlignment="Left" Height="25" Margin="93,254,0,0" VerticalAlignment="Top" Width="35"/>
+        <Label Content="Schaden" HorizontalAlignment="Left" Height="25" Margin="134,254,0,0" VerticalAlignment="Top" Width="65"/>
+        <Label x:Name="LBL_SCHADB" Content="0" HorizontalAlignment="Left" Height="25" Margin="217,254,0,0" VerticalAlignment="Top" Width="35"/>
+        <Label Content="Angriff" HorizontalAlignment="Left" Height="25" Margin="10,284,0,0" VerticalAlignment="Top" Width="65"/>
+        <Label x:Name="LBL_ANGB" Content="0" HorizontalAlignment="Left" Height="25" Margin="93,284,0,0" VerticalAlignment="Top" Width="35"/>
+        <Label Content="Resistenz" HorizontalAlignment="Left" Height="25" Margin="134,284,0,0" VerticalAlignment="Top" Width="65"/>
+        <Label x:Name="LBL_RES_K" Content="0" HorizontalAlignment="Left" Height="25" Margin="217,284,0,0" VerticalAlignment="Top" Width="27"/>
+        <Label Content="Abwehr" HorizontalAlignment="Left" Height="25" Margin="10,314,0,0" VerticalAlignment="Top" Width="65"/>
+        <Label x:Name="LBL_ABWB" Content="0" HorizontalAlignment="Left" Height="25" Margin="93,314,0,0" VerticalAlignment="Top" Width="35"/>
+        <Label Content="Zaubern" HorizontalAlignment="Left" Height="25" Margin="134,314,0,0" VerticalAlignment="Top" Width="65"/>
+        <Label x:Name="LBL_ZAUB" Content="0" HorizontalAlignment="Left" Height="25" Margin="217,314,0,0" VerticalAlignment="Top" Width="35"/>
+        <Label x:Name="LBL_RES_G" Content="0" HorizontalAlignment="Left" Height="25" Margin="249,284,0,0" VerticalAlignment="Top" Width="27"/>
+        <Label Content="LP-Max" HorizontalAlignment="Left" Height="27" Margin="10,385,0,0" VerticalAlignment="Top" Width="55"/>
+        <Label x:Name="LBL_LPM" Content="00" HorizontalAlignment="Left" Height="27" Margin="70,385,0,0" VerticalAlignment="Top" Width="26"/>
+        <Label Content="AP-Max" HorizontalAlignment="Left" Height="27" Margin="101,385,0,0" VerticalAlignment="Top" Width="55"/>
+        <Label x:Name="LBL_APM" Content="00" HorizontalAlignment="Left" Height="27" Margin="162,385,0,0" VerticalAlignment="Top" Width="28"/>
+        <Label Content="GG" HorizontalAlignment="Left" Height="27" Margin="217,385,0,0" VerticalAlignment="Top" Width="29"/>
+        <Label x:Name="LBL_GG" Content="00" HorizontalAlignment="Left" Height="27" Margin="251,385,0,0" VerticalAlignment="Top" Width="28"/>
+        <Label Content="SG" HorizontalAlignment="Left" Height="27" Margin="287,385,0,0" VerticalAlignment="Top" Width="29"/>
+        <Label x:Name="LBL_SG" Content="00" HorizontalAlignment="Left" Height="27" Margin="321,385,0,0" VerticalAlignment="Top" Width="28"/>
+        <Rectangle HorizontalAlignment="Left" Height="27" Margin="10,385,0,0" Stroke="Black" VerticalAlignment="Top" Width="91"/>
+        <Rectangle HorizontalAlignment="Left" Height="27" Margin="101,385,0,0" Stroke="Black" VerticalAlignment="Top" Width="89"/>
+        <Rectangle HorizontalAlignment="Left" Height="27" Margin="216,385,0,0" Stroke="Black" VerticalAlignment="Top" Width="66"/>
+        <Rectangle HorizontalAlignment="Left" Height="27" Margin="287,385,0,0" Stroke="Black" VerticalAlignment="Top" Width="70"/>
+        <Label Content="EP" HorizontalAlignment="Left" Height="25" Margin="10,417,0,0" VerticalAlignment="Top" Width="55"/>
+        <Label Content="ES" HorizontalAlignment="Left" Height="25" Margin="10,447,0,0" VerticalAlignment="Top" Width="55"/>
+        <Label x:Name="LBL_ES" Content="0" HorizontalAlignment="Left" Height="25" Margin="75,447,0,0" VerticalAlignment="Top" Width="53"/>
+        <Label x:Name="LBL_EP" Content="0" HorizontalAlignment="Left" Height="25" Margin="76,417,0,0" VerticalAlignment="Top" Width="52"/>
+        <Label Content="Geld" HorizontalAlignment="Left" Height="30" Margin="146,430,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label x:Name="LBL_GELD" Content="0" HorizontalAlignment="Left" Height="30" Margin="201,430,0,0" VerticalAlignment="Top" Width="156"/>
+        <ScrollViewer x:Name="SCRVW_Fertigkeiten" HorizontalAlignment="Left" Height="390" Margin="500,82,0,0" VerticalAlignment="Top" Width="273" Content="Fertigkeiten"/>
+        <Button x:Name="BTN_Load_Charakter" Content="Öffnen" HorizontalAlignment="Left" Height="43" Margin="803,54,0,0" VerticalAlignment="Top" Width="136" Click="BTN_Load_Charakter_Click"/>
+        <Button x:Name="BTN_Save_charakter" Content="Speichern" HorizontalAlignment="Left" Height="43" Margin="803,97,0,0" VerticalAlignment="Top" Width="136" Click="BTN_Save_charakter_Click"/>
+
+        <Button x:Name="BTN_reload" Content="Aktualisieren" HorizontalAlignment="Left" Height="42" Margin="803,139,0,0" VerticalAlignment="Top" Width="136" Click="BTN_reload_Click"/>
+        <Button x:Name="BTN_make_new" Content="neuer Charakter" HorizontalAlignment="Left" Height="42" Margin="803,179,0,0" VerticalAlignment="Top" Width="136" Click="BTN_make_new_Click"/>
+        <Button x:Name="BTN_new_skill" Content="neue Fertigkeit" HorizontalAlignment="Left" Height="44" Margin="803,221,0,0" VerticalAlignment="Top" Width="136" Click="BTN_new_skill_Click"/>
+        <Button x:Name="BTN_new_weapon" Content="neue Waffe" HorizontalAlignment="Left" Height="42" Margin="803,265,0,0" VerticalAlignment="Top" Width="136" Click="BTN_new_weapon_Click"/>
+        <Button x:Name="BTN_new_thing" Content="neuer Gegenstand" HorizontalAlignment="Left" Height="44" Margin="803,307,0,0" VerticalAlignment="Top" Width="136" Click="BTN_new_thing_Click"/>
+        <Button x:Name="BTN_change_werte" Content="Werte Ändern" HorizontalAlignment="Left" Height="44" Margin="803,351,0,0" VerticalAlignment="Top" Width="136" Click="BTN_change_werte_Click"/>
+        <Button x:Name="BTN_show_inv" Content="Inventar anzeigen" HorizontalAlignment="Left" Height="44" Margin="802,395,0,0" VerticalAlignment="Top" Width="136" Click="BTN_show_inv_Click"/>
+        <Button x:Name="BTN_show_weap" Content="Waffen anzeigen" HorizontalAlignment="Left" Height="44" Margin="803,439,0,0" VerticalAlignment="Top" Width="136" Click="BTN_show_weap_Click"/>
+    </Grid>
+
+</Window>

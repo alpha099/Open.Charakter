@@ -1,0 +1,17 @@
+﻿<Window x:Class="FSST_Projekt_PAP_ch_Manager.bedienfeld_charakter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FSST_Projekt_PAP_ch_Manager"
+        mc:Ignorable="d"
+        Title="neuer Charakter erstellen" Height="268" Width="350
+        ">
+    <Grid>
+        <Label Content="Charakter erstellen" HorizontalAlignment="Center" Height="59" Margin="0,10,0,0" VerticalAlignment="Top" Width="330" FontSize="30"/>
+        <Button x:Name="BTN_RNDM_CHAR" Content="Random charakter" HorizontalAlignment="Center" Height="47" Margin="0,74,0,0" VerticalAlignment="Top" Width="330" Click="BTN_RNDM_CHAR_Click"/>
+        <Button x:Name="BTN_Custom_w_calc" Content="Eigene Werte mit berechnung" HorizontalAlignment="Center" Height="47" Margin="0,126,0,0" VerticalAlignment="Top" Width="330" Click="BTN_Custom_w_calc_Click"/>
+        <Button x:Name="BTN_CUSTOM_CHAR" Content="Custom charakter" HorizontalAlignment="Center" Height="47" Margin="0,178,0,0" VerticalAlignment="Top" Width="330" Click="BTN_CUSTOM_CHAR_Click"/>
+
+    </Grid>
+</Window>
