@@ -48,11 +48,11 @@ namespace FSST_Projekt_PAP_ch_Manager
 
         private void BTN_Übernehmen_Click(object sender, RoutedEventArgs e)
         {
-            SCHADEN = Convert.ToInt32(TB_SCHADEN.Text);
-            PREIS = Convert.ToInt32(TB_PREIS.Text);
+            try { SCHADEN = Convert.ToInt32(TB_SCHADEN.Text); } catch { MessageBox.Show("Keine Zahl", "Keine Zahl", MessageBoxButton.OK); }
+            try { PREIS = Convert.ToInt32(TB_PREIS.Text); } catch { MessageBox.Show("Keine Zahl", "Keine Zahl", MessageBoxButton.OK); }
             NAME = TB_NAME.Text;
             MATERIAL = TB_MATERIAL.Text;
-            REICHWEITE = Convert.ToInt32(TB_RANGE.Text);
+            try { REICHWEITE = Convert.ToInt32(TB_RANGE.Text); } catch { MessageBox.Show("Keine Zahl", "Keine Zahl", MessageBoxButton.OK); }
             charr.add_waffe(NAME, SCHADEN, REICHWEITE, MATERIAL, PREIS);
             Exit();
         }

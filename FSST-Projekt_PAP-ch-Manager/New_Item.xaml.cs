@@ -55,8 +55,8 @@ namespace FSST_Projekt_PAP_ch_Manager
         {
             NAME = TB_NAME.Text;
             SPEZIFIKATIONEN = TB_Spez.Text;
-            GEWICHT = Convert.ToInt32(TB_GEW.Text);
-            PREIS = Convert.ToInt32(TB_PREIS.Text);
+            try { GEWICHT = Convert.ToInt32(TB_GEW.Text); } catch { MessageBox.Show("Keine Zahl", "Keine Zahl", MessageBoxButton.OK); }
+            try { PREIS = Convert.ToInt32(TB_PREIS.Text); } catch { MessageBox.Show("Keine Zahl", "Keine Zahl", MessageBoxButton.OK); }
             charaa.add_Gegenstand(NAME, GEWICHT, SPEZIFIKATIONEN, PREIS);
 
             Exit();

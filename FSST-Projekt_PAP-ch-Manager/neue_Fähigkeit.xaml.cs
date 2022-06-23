@@ -37,12 +37,14 @@ namespace FSST_Projekt_PAP_ch_Manager
         #region Buttons
         private void BTN_Übernehmen_Click(object sender, RoutedEventArgs e)
         {
-            fer.change_bonus(Convert.ToInt16(TB_BONI.Text));
+            try { fer.change_bonus(Convert.ToInt16(TB_BONI.Text)); }
+            catch { MessageBox.Show("Keine Zahl", "Keine Zahl", MessageBoxButton.OK); }
             fer.change_name(TB_NAME.Text);
-            fer.change_extra(Convert.ToInt32(TB_LEIT.Text));
+            try { fer.change_extra(Convert.ToInt32(TB_LEIT.Text)); }
+            catch { MessageBox.Show("Keine Zahl", "Keine Zahl", MessageBoxButton.OK); }
             charakter.add_fertigkeit(fer);
             this.Close();
-        }
+            }
 
         private void BTN_Verwerfen_Click(object sender, RoutedEventArgs e)
         {

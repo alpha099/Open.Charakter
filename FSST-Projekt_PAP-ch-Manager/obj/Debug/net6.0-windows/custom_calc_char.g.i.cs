@@ -461,7 +461,7 @@ namespace FSST_Projekt_PAP_ch_Manager {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FSST-Projekt_PAP-ch-Manager;V1.0.0.0;component/custom_calc_char.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FSST-Projekt_PAP-ch-Manager;component/custom_calc_char.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\custom_calc_char.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
